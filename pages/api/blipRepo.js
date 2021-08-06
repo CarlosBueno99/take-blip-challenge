@@ -3,47 +3,45 @@ async function blipRepoAPI(request,response){
     const githubRepoResponse = await fetch("https://api.github.com/orgs/takenet/repos?sort=created&direction=asc");
     const gitData = await githubRepoResponse.json();
 
-
-
-    console.log(gitData[1].owner.avatar_url)
-
-    var i = 0;
+    var repos = new Array();
     
-    while(i < 30){
-        
-        if (gitData[i].language == "C#"){
-            console.log(gitData[i].full_name)
 
+
+    function createCard(id,avatar, title, subtitle){
+        this.id = id;
+        this.avatar = avatar;
+        this.title = title;
+        this.subtitle = subtitle;
+    }
+    
+    //loop variables
+    var i = 0;
+    var cCount = 0;
+
+
+    //walk through data registering the first 5 C# repos in the repo array
+    while(i < gitData.length){
+        
+        if (gitData[i].language == "C#" && cCount < 5){
+            repos.push(new createCard(i, gitData[i].owner.avatar_url, gitData[i].full_name, gitData[i].description ))
+            
             
 
+            cCount++;
+
+
+
         }
-        
-        
         
         i++;
     }
 
-
-
-    const repoName = gitData[1].full_name;
-    const repoDescription = gitData[1].description;
-    const repolanguage = gitData[1].language;
-    const takeAvatar = "something";
-
-    console.log(repoName)
-    console.log(repoDescription)
-    console.log(repolanguage)
-    console.log(takeAvatar)
-    
+    if (cCount==5){
+        console.log("Successfully parsed Takes´ first 5 C# repos from the github API response")
+    }
 
     response.json(
-        {
-        cardImage: takeAvatar,
-        carTitle: repoName,
-        cardSubTitle: repoDescription,
-        language : repolanguage,
-        other : "information"
-        }
+        repos
     )
 }
 
