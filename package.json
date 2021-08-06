@@ -1,0 +1,25 @@
+{
+  "name": "take-blip-challenge",
+  "version": "1.0.0",
+  "description": "the main purpose for this repo is to store the code used for the Take-Blip Challenge",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlosBueno99/take-blip-challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarlosBueno99/take-blip-challenge/issues"
+  },
+  "homepage": "https://github.com/CarlosBueno99/take-blip-challenge#readme",
+  "dependencies": {
+    "next": "^11.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
