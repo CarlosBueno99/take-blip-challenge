@@ -1,3 +1,5 @@
+//I realized that if all the repos were created by the same account they all share the same avatar photo (btw the fact that it´s white and a .png file makes its text poorly barely on the Carroussel backgroud)
+
 async function getAvatar(request,response){
 
     const idCard = 0;

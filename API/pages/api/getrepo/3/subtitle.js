@@ -1,3 +1,5 @@
+//this file only filters the reponse of the main API to get the sole information it needs
+
 async function getRepo(request,response){
 
     const idCard = 3;
