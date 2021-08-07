@@ -26,6 +26,6 @@ Because of some limitations on the data that Blip's bot builder can handle and b
 So if the bot needs the full_name of the third oldest C# repo on Takenet's github account he only needs to fetch the information of this endpoint for example. https://take-blip-challenge.vercel.app/api/getrepo/2/title
 
 The deployment of the API was made using Vercel and the next.js framework.
-I used next because of the way it handles the rounting of the API/Pages. (It's amazing for smaller projects)
+I used next.js because of the way it handles the rounting of the API/Pages. (It's amazing for smaller projects)
 
 I chose Vercel because they have an amazing automation that everytime I push the code to github and the repo is updated it knows and redeploys my API endpoints automagically using the code on this repo.
