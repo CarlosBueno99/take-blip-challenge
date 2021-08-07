@@ -18,6 +18,8 @@ The challenge is to create an API to parse the information of the github public 
 The information that needs to be retrieved from the Github API is the first 5 C# repos from Take (Blip)
 The thing is that the github API doesn't have a lot of filtering functionalities and because of that an intermediary API had to be made to serve only the useful information out of github to the bot.
 
+You can access the Chatbot via this link: https://chat.blip.ai/?appKey=amFtZXNwb25kdGVzdGJsaXA6NjA1M2FiYTAtMjU1MS00ZDkzLThkOWQtNjE3ZmVlODUxNWI3
+
 ## Regarding the Second
 This part of the code is simply the challenge mentioned on the First topic.
 
