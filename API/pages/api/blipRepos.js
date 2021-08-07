@@ -4,8 +4,6 @@ async function blipRepoAPI(request,response){
     const gitData = await githubRepoResponse.json();
 
     var repos = new Array();
-    
-
 
     function createCard(id,avatar, title, subtitle){
         this.id = id;

@@ -1,6 +1,6 @@
 async function getRepo(request,response){
 
-    const idCard = 2;
+    const idCard = 0;
 
     const githubRepoResponse = await fetch("https://take-blip-challenge.vercel.app/api/blipRepo");
     const gitData = await githubRepoResponse.json();
@@ -10,7 +10,7 @@ async function getRepo(request,response){
     console.log("there you go boy");
 
     response.json(
-        gitData[idCard]
+        gitData[idCard].subtitle
     )
 }
 
