@@ -1,11 +1,11 @@
 # take-blip-challenge
-The main purpose for this repo is to store the code used for the Take-Blip Challenge
+The main purpose for this repo is to store the code used for the Take-Blip Challenge.
 
 
 
 Here´s a TL;DR if you're not felling like reading the actual code to understand what is going on on this Repo:
 
-Basically there's two things going on
+Basically there's two things going on:
 
 - 1 - A chatbot made on Blip's chatbot platform
 - 2 - An API that is used by the bot to get the information it needs from github
@@ -13,7 +13,7 @@ Basically there's two things going on
 ## Regarding the First
 The bot tells you about the core values of Take Blip and then gives you an option to see the challenge.
 
-The challenge is to create an API to parse the information of the github public API
+The challenge is to create an API to parse the information of the github public API.
 
 The information that needs to be retrieved from the Github API is the first 5 C# repos from Take (Blip)
 The thing is that the github API doesn't have a lot of filtering functionalities and because of that an intermediary API had to be made to serve only the useful information out of github to the bot.
