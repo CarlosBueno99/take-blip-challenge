@@ -1,4 +1,4 @@
-# take-blip-challenge
+# Take-blip-challenge
 The main purpose for this repo is to store the code used for the Take-Blip Challenge.
 
 
