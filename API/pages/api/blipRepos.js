@@ -4,7 +4,7 @@
 
 
 async function blipRepoAPI(request,response){
-    res.setHeader('Cache-Control', 's-maxage=86400');
+    response.setHeader('Cache-Control', 's-maxage=86400');
 
     //get the information from github, select the relevant information and append it to the final response.
 
