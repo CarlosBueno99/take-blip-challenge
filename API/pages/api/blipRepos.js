@@ -1,6 +1,6 @@
 // This file is in fact the most important file in this project, the other endpoints are simply a broken down version of what´s being done in this file.
 // I wanted to have this as my only file, but because a limitation on blip that doesn´t allow be to correctly use array responses inside of the builder I had to create multiple other endpoints (some of them I created just fo fun) 
-
+// 
 
 
 async function blipRepoAPI(request,response){
