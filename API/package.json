@@ -4,7 +4,10 @@
   "description": "the main purpose for this repo is to store the code used for the Take-Blip Challenge",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "repository": {
     "type": "git",
